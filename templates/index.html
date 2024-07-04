@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Image Compression</title>
+  </head>
+  <body>
+    <h1>Image Compression</h1>
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class=flashes>
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+
+    <form method=post enctype=multipart/form-data>
+      <input type=file name=file>
+      <input type=submit value=Upload>
+    </form>
+
+    {% if filename %}
+      <h2>Decompressed Image</h2>
+      <img src="{{ url_for('uploaded_file', filename=filename) }}">
+    {% endif %}
+  </body>
+</html>
