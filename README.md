@@ -39,3 +39,7 @@ We welcome contributions to Squiz Pics! If you'd like to contribute, please foll
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
 
+
+##
+NOTE: This project is currently being developed with React & Typescript
+
