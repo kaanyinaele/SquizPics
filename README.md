@@ -41,5 +41,5 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 
 
 ##
-NOTE: This project is currently being developed with React & Typescript
+NOTE: This project is currently being redeveloped from scratch using React & Typescript
 
